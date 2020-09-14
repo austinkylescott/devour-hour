@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet"
 import { ThemeProvider } from "styled-components"
 import theme from "../styles/theme"
 import GlobalStyle from "../styles/GlobalStyle"
+import PageWrapper from "../PageWrapper"
 
 import Nav from "../Nav"
 
@@ -20,7 +21,7 @@ export default function Layout({ children }) {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Nav />
-        {children}
+        <PageWrapper>{children}</PageWrapper>
       </ThemeProvider>
     </React.Fragment>
   )

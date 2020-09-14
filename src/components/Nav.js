@@ -7,7 +7,7 @@ const NavBar = styled.nav`
   font-family: ${props => props.theme.displayFont};
   font-size: 1.5rem;
   background-color: ${props => props.theme.mainWrapperColor};
-  width: 90vw;
+  width: 100vw;
   max-width: 1200px;
   padding: 1rem 0;
   margin: 3rem auto 0;
@@ -16,10 +16,6 @@ const NavBar = styled.nav`
 
   ${mediaQueries("md")`
     font-size:2rem;
-  `}
-
-  ${mediaQueries("xl")`
-    width:90vw;
   `}
 `
 
@@ -37,10 +33,6 @@ const NavLinks = styled.ul`
   padding: 1rem;
   justify-content: space-around;
   flex-shrink: 1;
-
-  ${mediaQueries("md")`
-
-  `}
 `
 
 const Nav = () => {
