@@ -11,6 +11,12 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${props => props.theme.pageBackgroundColor};
     font-family: ${props => props.theme.primaryFont};
   }
+
+  html {
+    visibility: visible;
+    opacity:1;
+  }
+
 `
 
 export default GlobalStyle

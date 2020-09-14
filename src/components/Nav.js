@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 import Logo from "./Logo"
 import { mediaQueries } from "./styles/breakpoints"
 
@@ -19,7 +20,7 @@ const NavBar = styled.nav`
   `}
 `
 
-const StyledNavLink = styled.a`
+const StyledNavLink = styled(Link)`
   flex-shrink: 1;
   text-decoration: none;
   color: ${props => props.theme.displayColor};
@@ -41,10 +42,10 @@ const Nav = () => {
       <Logo href="/" />
       <NavBar>
         <NavLinks>
-          <StyledNavLink href="/">Home</StyledNavLink>
-          <StyledNavLink href="/reviews">Reviews</StyledNavLink>
-          <StyledNavLink href="/merch">Merch</StyledNavLink>
-          <StyledNavLink href="/contact">Contact</StyledNavLink>
+          <StyledNavLink to="/">Home</StyledNavLink>
+          <StyledNavLink to="/reviews">Reviews</StyledNavLink>
+          <StyledNavLink to="/merch">Merch</StyledNavLink>
+          <StyledNavLink to="/contact">Contact</StyledNavLink>
         </NavLinks>
       </NavBar>
     </>
