@@ -12,8 +12,6 @@ const NavBar = styled.nav`
   max-width: 1200px;
   padding: 1rem 0;
   margin: 3rem auto 0;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
 
   ${mediaQueries("md")`
     font-size:2rem;

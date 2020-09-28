@@ -13,13 +13,16 @@ const StyledLogo = styled.div`
   color: #fed128;
   font-size: 4rem;
   line-height: 4rem;
-  text-shadow: 0 0 3vw #806914;
+  /* text-shadow: 0 0 3vw #806914; */
+  text-shadow: 0 0 1vw #fa1c16, 0 0 3vw #fa1c16, 0 0 10vw #fa1c16,
+    0 0 10vw #fa1c16, 0 0 0.4vw #fed128, 0.5vw 0.5vw 0.1vw #806914;
+  color: #fed128;
 
-  animation: neon 2s ease infinite;
+  /* animation: neon 2s ease infinite;
   -moz-animation: neon 2s ease infinite;
-  -webkit-animation: neon 2s ease infinite;
+  -webkit-animation: neon 2s ease infinite; */
 
-  @keyframes neon {
+  /* @keyframes neon {
     0%,
     100% {
       text-shadow: 0 0 1vw #fa1c16, 0 0 3vw #fa1c16, 0 0 10vw #fa1c16,
@@ -31,7 +34,7 @@ const StyledLogo = styled.div`
         0 0 5vw #800e0b, 0 0 0.2vw #800e0b, 0.5vw 0.5vw 0.1vw #40340a;
       color: #806914;
     }
-  }
+  } */
 `
 
 const Logo = () => {
